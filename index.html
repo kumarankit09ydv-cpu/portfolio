@@ -1,11 +1,14 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ankit Kumar | Cloud Engineer Portfolio</title>
+
     <!-- FontAwesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
     <style>
         * {
             box-sizing: border-box;
@@ -294,28 +297,69 @@
 
         /* MOBILE RESPONSIVE LAYOUT */
         @media (max-width: 960px) {
-            body { display: block; }
-            .sidebar { width: 100%; height: auto; position: relative; padding: 40px 20px; }
-            .menu { display: none; }
-            .main-content { width: 100%; margin-left: 0; padding: 40px 25px; }
-            .skills-container { grid-template-columns: 1fr; }
-            .timeline-entry { flex-direction: column; gap: 5px; }
-            .time-period { width: 100%; }
-            .timeline-details { width: 100%; }
-            .contact-section-wrapper { flex-direction: column; }
-            .contact-info-left { width: 100%; }
-            .contact-form-right { width: 100%; }
+            body {
+                display: block;
+            }
+
+            .sidebar {
+                width: 100%;
+                height: auto;
+                position: relative;
+                padding: 40px 20px;
+            }
+
+            .menu {
+                display: none;
+            }
+
+            .main-content {
+                width: 100%;
+                margin-left: 0;
+                padding: 40px 25px;
+            }
+
+            .skills-container {
+                grid-template-columns: 1fr;
+            }
+
+            .timeline-entry {
+                flex-direction: column;
+                gap: 5px;
+            }
+
+            .time-period {
+                width: 100%;
+            }
+
+            .timeline-details {
+                width: 100%;
+            }
+
+            .contact-section-wrapper {
+                flex-direction: column;
+            }
+
+            .contact-info-left {
+                width: 100%;
+            }
+
+            .contact-form-right {
+                width: 100%;
+            }
         }
     </style>
 </head>
+
 <body>
 
     <!-- LEFT SIDEBAR -->
     <aside class="sidebar">
+
         <!-- LOCAL PHOTO SET KI HAI -->
         <div class="profile-img-container">
             <img class="profile-img" src="photo.jpg" alt="Ankit Kumar">
         </div>
+
         <h1 class="profile-name">Ankit Kumar</h1>
         <p class="profile-title">Cloud Engineer</p>
 
@@ -329,30 +373,54 @@
         </ul>
 
         <div class="sidebar-footer">
-            <div class="footer-item"><i class="fa-solid fa-envelope"></i> <a href="mailto:kumarankito9ydv@gmail.com">kumarankito9ydv@gmail.com</a></div>
-            <div class="footer-item"><i class="fa-solid fa-phone"></i> +91 8591162236</div>
-            <div class="footer-item"><i class="fa-brands fa-linkedin"></i> <a href="https://linkedin.com/in/ankit-kumar-84b3313ba" target="_blank">LinkedIn</a></div>
-            <div class="footer-item"><i class="fa-brands fa-github"></i> <a href="https://github.com/kumarankit09ydv-cpu" target="_blank">GitHub</a></div>
+            <div class="footer-item">
+                <i class="fa-solid fa-envelope"></i>
+                <a href="mailto:kumarankito9ydv@gmail.com">kumarankito9ydv@gmail.com</a>
+            </div>
+
+            <div class="footer-item">
+                <i class="fa-solid fa-phone"></i>
+                +91 8591162236
+            </div>
+
+            <div class="footer-item">
+                <i class="fa-brands fa-linkedin"></i>
+                <a href="https://linkedin.com/in/ankit-kumar-84b3313ba" target="_blank">LinkedIn</a>
+            </div>
+
+            <div class="footer-item">
+                <i class="fa-brands fa-github"></i>
+                <a href="https://github.com/kumarankit09ydv-cpu" target="_blank">GitHub</a>
+            </div>
         </div>
+
     </aside>
+
 
     <!-- RIGHT CONTENT AREA -->
     <main class="main-content">
-        
+
         <!-- SUMMARY -->
         <section id="summary">
             <h2>Professional Summary</h2>
+
             <p class="summary-text">
-                BCA and Diploma holder with a deep interest in Cloud Computing and Cybersecurity, with a strong focus on building secure, scalable AWS infrastructure. Skilled in Linux administration and Ethical Hacking.
+                BCA and Diploma holder with a deep interest in Cloud Computing and Cybersecurity,
+                with a strong focus on building secure, scalable AWS infrastructure.
+                Skilled in Linux administration and Ethical Hacking.
             </p>
         </section>
+
 
         <!-- SKILLS & TOOLS -->
         <section id="skills">
             <h2>Technical Skills & Tools</h2>
+
             <div class="skills-container">
+
                 <div class="skills-group">
                     <h3>Cloud Computing</h3>
+
                     <div class="pill-wrapper">
                         <span class="skill-pill">AWS (EC2, S3, IAM)</span>
                         <span class="skill-pill">VPC</span>
@@ -360,29 +428,34 @@
                         <span class="skill-pill">Git</span>
                         <span class="skill-pill">GitHub</span>
                         <span class="skill-pill">Docker</span>
+                        <span class="skill-pill">Kubernetes</span>
                     </div>
                 </div>
+
                 <div class="skills-group">
                     <h3>Ethical Hacking & OS</h3>
+
                     <div class="pill-wrapper">
                         <span class="skill-pill">Ethical Hacking</span>
                         <span class="skill-pill">Vulnerability Assessment</span>
                         <span class="skill-pill">Linux (Ubuntu, Kali)</span>
-                        <span class="skill-pill">Windows Server</span>
                     </div>
                 </div>
+
                 <div class="skills-group">
                     <h3>Networking & Languages</h3>
+
                     <div class="pill-wrapper">
                         <span class="skill-pill">TCP/IP</span>
-                        <span class="skill-pill">OSI Model</span>
                         <span class="skill-pill">DNS, HTTP/HTTPS, SSH</span>
-                        <span class="skill-pill">C</span>
-                        <span class="skill-pill">Python</span>
+                        <span class="skill-pill">C & python</span>
+                        <span class="skill-pill">Bash scripting</span>
                     </div>
                 </div>
+
                 <div class="skills-group">
                     <h3>Security Tools</h3>
+
                     <div class="pill-wrapper">
                         <span class="skill-pill">Nmap</span>
                         <span class="skill-pill">Wireshark</span>
@@ -391,125 +464,352 @@
                         <span class="skill-pill">VS Code</span>
                     </div>
                 </div>
+
             </div>
         </section>
+
 
         <!-- PROJECTS -->
         <section id="projects">
             <h2>Featured Projects</h2>
+
             <div class="timeline-container">
+
+                <!-- PROJECT 1 -->
                 <div class="timeline-entry">
+
                     <div class="time-period">AWS Project</div>
+
                     <div class="timeline-details">
-                        <div class="role-title">Cloud Storage & Deployment System (AWS)</div>
-                        <div class="company-name">Architecture & Development</div>
+
+                        <div class="role-title">
+                            Highly Available 3-Tier Web Architecture on AWS
+                        </div>
+
+                        <div class="company-name">
+                            Architecture & Development
+                        </div>
+
                         <ul>
-                            <li>Developed a full-stack File Upload System using Node.js and hosted it on Amazon EC2.</li>
-                            <li>Integrated Amazon S3 for secure, high-availability object storage and retrieval.</li>
-                            <li>Implemented IAM Roles and Bucket Policies following the Principle of Least Privilege (PoLP) to enhance security.</li>
-                            <li>Designed RESTful APIs for efficient file management and optimized data flow.</li>
+
+                            <li>
+                                Designed and deployed a secure 3-tier architecture on AWS using
+                                a custom VPC with 6 subnets (2 public, 4 private) across 2
+                                Availability Zones for high availability and fault tolerance.
+                            </li>
+
+                            <li>
+                                Configured an Application Load Balancer to distribute traffic
+                                across multiple EC2 instances in private subnets, achieving
+                                reliable load balancing verified through target group health checks.
+                            </li>
+
+                            <li>
+                                Implemented layered Security Groups (ALB to EC2 to RDS) to ensure
+                                database and application servers remain fully isolated from
+                                direct internet access.
+                            </li>
+
+                            <li>
+                                Enabled secure, keyless remote administration of private EC2
+                                instances using AWS Systems Manager Session Manager and IAM roles,
+                                eliminating the need for SSH key management or bastion hosts.
+                            </li>
+
+                            <li>
+                                Deployed a MySQL database on Amazon RDS within isolated private
+                                subnets and configured a NAT Gateway for controlled outbound
+                                internet access from application servers.
+                            </li>
+
                         </ul>
+
                     </div>
                 </div>
+
+
+                <!-- PROJECT 2: SSH HONEYPOT -->
+                <div class="timeline-entry">
+
+                    <div class="time-period">AWS Security Project</div>
+
+                    <div class="timeline-details">
+
+                        <div class="role-title">
+                            SSH Honeypot for Attacker Behavior Analysis
+                        </div>
+
+                        <div class="company-name">
+                            AWS EC2 • Cowrie • Linux Security
+                        </div>
+
+                        <ul>
+
+                            <li>
+                                Deployed a Cowrie SSH honeypot on AWS EC2 running Amazon Linux 2023
+                                to attract and analyze real-world attacker behavior.
+                            </li>
+
+                            <li>
+                                Configured IAM role-based AWS Systems Manager Session Manager access,
+                                eliminating the need for SSH key pairs while exposing a decoy SSH
+                                service through Security Groups.
+                            </li>
+
+                            <li>
+                                Ran Cowrie under an isolated non-root account with a fake Linux
+                                filesystem and shell to safely engage and monitor attackers.
+                            </li>
+
+                            <li>
+                                Implemented structured logging to capture attacker IP addresses,
+                                executed commands, and session duration for security and threat analysis.
+                            </li>
+
+                            <li>
+                                Validated the honeypot through simulated attack sessions and confirmed
+                                accurate command capture and session logging.
+                            </li>
+
+                        </ul>
+
+                    </div>
+                </div>
+
             </div>
         </section>
+
 
         <!-- EDUCATION -->
         <section id="education">
+
             <h2>Education</h2>
+
             <div class="timeline-container">
+
                 <div class="timeline-entry">
                     <div class="time-period">2024 — 2026</div>
+
                     <div class="timeline-details">
-                        <div class="role-title">Bachelor of Computer Applications (BCA)</div>
-                        <div class="company-name">Maharaja Agrasen College, New Delhi</div>
+                        <div class="role-title">
+                            Bachelor of Computer Applications (BCA)
+                        </div>
+
+                        <div class="company-name">
+                            Maharaja Agrasen College, New Delhi
+                        </div>
                     </div>
                 </div>
+
+
                 <div class="timeline-entry">
                     <div class="time-period">2025</div>
+
                     <div class="timeline-details">
-                        <div class="role-title">Diploma in Cyber Security</div>
-                        <div class="company-name">Craw security</div>
+                        <div class="role-title">
+                            Diploma in Cyber Security
+                        </div>
+
+                        <div class="company-name">
+                            Craw security
+                        </div>
                     </div>
                 </div>
+
+
                 <div class="timeline-entry">
                     <div class="time-period">Passing Year: 2023</div>
+
                     <div class="timeline-details">
-                        <div class="role-title">Class 12th </div>
-                        <div class="company-name">Bihar School Examination Board, Bihar</div>
+                        <div class="role-title">
+                            Class 12th
+                        </div>
+
+                        <div class="company-name">
+                            Bihar School Examination Board, Bihar
+                        </div>
                     </div>
                 </div>
+
+
                 <div class="timeline-entry">
                     <div class="time-period">Passing Year: 2021</div>
+
                     <div class="timeline-details">
-                        <div class="role-title">Class 10th </div>
-                        <div class="company-name">Bihar School Examination Board, Bihar</div>
+                        <div class="role-title">
+                            Class 10th
+                        </div>
+
+                        <div class="company-name">
+                            Bihar School Examination Board, Bihar
+                        </div>
                     </div>
                 </div>
+
             </div>
         </section>
+
 
         <!-- CERTIFICATIONS & TRAINING -->
         <section id="certifications">
+
             <h2>Training & Certificates</h2>
+
             <div class="timeline-container">
+
                 <div class="timeline-entry">
                     <div class="time-period">March 2026</div>
+
                     <div class="timeline-details">
-                        <div class="role-title">AWS Cloud Certification</div>
-                        <div class="company-name">Craw Security</div>
+                        <div class="role-title">
+                            AWS Cloud Certification
+                        </div>
+
+                        <div class="company-name">
+                            Craw Security
+                        </div>
                     </div>
                 </div>
+
+
                 <div class="timeline-entry">
                     <div class="time-period">Feb 2026</div>
+
                     <div class="timeline-details">
-                        <div class="role-title">Ethical Hacking Workshop</div>
-                        <div class="company-name">Craw Security</div>
+                        <div class="role-title">
+                            Ethical Hacking Workshop
+                        </div>
+
+                        <div class="company-name">
+                            Craw Security
+                        </div>
                     </div>
                 </div>
+
+
                 <div class="timeline-entry">
                     <div class="time-period">August 2025</div>
+
                     <div class="timeline-details">
-                        <div class="role-title">Linux System Administration</div>
-                        <div class="company-name">Craw Security</div>
+                        <div class="role-title">
+                            Linux System Administration
+                        </div>
+
+                        <div class="company-name">
+                            Craw Security
+                        </div>
                     </div>
                 </div>
+
+
                 <div class="timeline-entry">
                     <div class="time-period">Feb 2025</div>
+
                     <div class="timeline-details">
-                        <div class="role-title">Networking Core Training</div>
-                        <div class="company-name">Craw Security</div>
+                        <div class="role-title">
+                            Networking Core Training
+                        </div>
+
+                        <div class="company-name">
+                            Craw Security
+                        </div>
                     </div>
                 </div>
+
             </div>
         </section>
 
+
         <!-- CONTACT (GET IN TOUCH) -->
         <section id="contact">
+
             <h2>Get In Touch</h2>
+
             <div class="contact-section-wrapper">
+
                 <div class="contact-info-left">
-                    <div class="footer-item"><i class="fa-solid fa-envelope" style="color:#2563eb;"></i> <a href="mailto:kumarankito9ydv@gmail.com" style="color:#4b5563;">kumarankito9ydv@gmail.com</a></div>
-                    <div class="footer-item"><i class="fa-solid fa-phone" style="color:#2563eb;"></i> <span style="color:#4b5563;">+91 8591162236</span></div>
-                    <div class="footer-item"><i class="fa-solid fa-location-dot" style="color:#2563eb;"></i> <span style="color:#4b5563;">Noida, Delhi NCR</span></div>
-                </div>
-                
-                <form class="contact-form-right" action="https://formspree.io/f/mykrkbpj" method="POST">
-                    <div class="form-row">
-                        <input type="text" name="name" class="form-input" placeholder="Your Name" required>
-                        <input type="email" name="email" class="form-input" placeholder="Your Email" required>
+
+                    <div class="footer-item">
+                        <i class="fa-solid fa-envelope" style="color:#2563eb;"></i>
+                        <a href="mailto:kumarankito9ydv@gmail.com" style="color:#4b5563;">
+                            kumarankito9ydv@gmail.com
+                        </a>
                     </div>
-                    <input type="text" name="subject" class="form-input" placeholder="Subject" required>
-                    <textarea name="message" class="form-input" placeholder="Your Message" required></textarea>
-                    <button type="submit" class="submit-btn">Send Message</button>
+
+                    <div class="footer-item">
+                        <i class="fa-solid fa-phone" style="color:#2563eb;"></i>
+                        <span style="color:#4b5563;">
+                            +91 8591162236
+                        </span>
+                    </div>
+
+                    <div class="footer-item">
+                        <i class="fa-solid fa-location-dot" style="color:#2563eb;"></i>
+                        <span style="color:#4b5563;">
+                            Noida, Delhi NCR
+                        </span>
+                    </div>
+
+                </div>
+
+
+                <form
+                    class="contact-form-right"
+                    action="https://formspree.io/f/mykrkbpj"
+                    method="POST"
+                >
+
+                    <div class="form-row">
+
+                        <input
+                            type="text"
+                            name="name"
+                            class="form-input"
+                            placeholder="Your Name"
+                            required
+                        >
+
+                        <input
+                            type="email"
+                            name="email"
+                            class="form-input"
+                            placeholder="Your Email"
+                            required
+                        >
+
+                    </div>
+
+                    <input
+                        type="text"
+                        name="subject"
+                        class="form-input"
+                        placeholder="Subject"
+                        required
+                    >
+
+                    <textarea
+                        name="message"
+                        class="form-input"
+                        placeholder="Your Message"
+                        required
+                    ></textarea>
+
+                    <button type="submit" class="submit-btn">
+                        Send Message
+                    </button>
+
                 </form>
+
             </div>
         </section>
+
 
         <footer>
             <p>© 2026 Ankit Kumar · All Rights Reserved</p>
         </footer>
+
     </main>
 
 </body>
 </html>
+```
