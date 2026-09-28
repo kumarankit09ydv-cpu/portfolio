@@ -15,7 +15,7 @@ pipeline
         {
             steps
             {
-               sh  'docker build -t hydrauser/portfolio .'
+               bat 'docker build -t hydrauser/portfolio .'
             }
         }
 
@@ -23,9 +23,9 @@ pipeline
         {
             steps
             {
-              sh 'docker stop portfolio-container || true'
-              sh 'docker rm portfolio-container || true '
-              sh 'docker run -d -p 8081:80 --name portfolio-container hydrauser/portfolio'
+              bat 'docker stop portfolio-container || true'
+              bat 'docker rm portfolio-container || true '
+              bat 'docker run -d -p 8081:80 --name portfolio-container hydrauser/portfolio'
             }
         }
     }
