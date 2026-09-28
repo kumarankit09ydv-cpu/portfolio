@@ -23,8 +23,8 @@ pipeline
         {
             steps
             {
-              bat 'docker stop portfolio-container || true'
-              bat 'docker rm portfolio-container || true '
+              bat 'docker stop portfolio-container || exit 0'
+              bat 'docker rm portfolio-container || exit 0 '
               bat 'docker run -d -p 8081:80 --name portfolio-container hydrauser/portfolio'
             }
         }
