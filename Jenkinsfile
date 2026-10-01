@@ -12,15 +12,15 @@ stages {
 
     stage('Docker Build') {
         steps {
-            bat 'docker build -t hydrauser/portfolio .'
+            sh 'docker build -t hydrauser/portfolio .'
         }
     }
 
     stage('Docker Deploy') {
         steps {
-            bat 'docker stop portfolio-container || exit 0'
-            bat 'docker rm portfolio-container || exit 0'
-            bat 'docker run -d -p 8081:80 --name portfolio-container hydrauser/portfolio'
+            sh 'docker stop portfolio-container || exit 0'
+            sh 'docker rm portfolio-container || exit 0'
+            sh 'docker run -d -p 8081:80 --name portfolio-container hydrauser/portfolio'
         }
     }
 
@@ -33,8 +33,8 @@ stages {
                     passwordVariable: 'DOCKER_PASS'
                 )
             ]) {
-                bat 'docker login -u %DOCKER_USER% -p %DOCKER_PASS%'
-                bat 'docker push hydrauser/portfolio'
+                sh 'docker login -u %DOCKER_USER% -p %DOCKER_PASS%'
+                sh 'docker push hydrauser/portfolio'
             }
         }
     }
