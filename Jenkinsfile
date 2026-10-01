@@ -16,6 +16,13 @@ stages {
         }
     }
 
+    stage('Test') 
+    {
+       steps {
+            sh 'docker run --rm hydrauser/portfolio ls /usr/share/nginx/html | grep index.html'
+         }
+    }
+
     stage('Docker Deploy') {
         steps {
             sh 'docker stop portfolio-container || true'
