@@ -18,8 +18,8 @@ stages {
 
     stage('Docker Deploy') {
         steps {
-            sh 'docker stop portfolio-container || exit 0'
-            sh 'docker rm portfolio-container || exit 0'
+            sh 'docker stop portfolio-container || true'
+            sh 'docker rm portfolio-container || true'
             sh 'docker run -d -p 8081:80 --name portfolio-container hydrauser/portfolio'
         }
     }
