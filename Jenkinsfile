@@ -40,4 +40,13 @@ stages {
     }
 }
 
+post {
+    success {
+        echo 'Build successful! Site deployed.'
+    }
+    failure {
+        echo 'Build failed! Check the logs.'
+    }
+}
+
 }
