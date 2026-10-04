@@ -57,7 +57,8 @@ post {
     success {
         echo 'Build successful! Site deployed.'
     }
-    failure {
+    failure 
+    {
         echo 'Build failed! Check the logs.'
     }
 }
