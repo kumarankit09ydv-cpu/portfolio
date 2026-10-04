@@ -49,7 +49,7 @@ stages {
     stage('Deploy to Remote Server')
      {
         steps {
-            sh 'ssh -i /var/lib/jenkins/ubuntuu.pem -o StrictHostKeyChecking=no ubuntu@3.7.252.69 "docker pull hydrauser/portfolio && docker stop portfolio-container || true && docker rm portfolio-container || true && docker run -d -p 80:80 --name portfolio-container hydrauser/portfolio"'
+            sh 'ssh -i /var/lib/jenkins/ubuntuu.pem -o StrictHostKeyChecking=no ubuntu@13.204.66.210 "docker pull hydrauser/portfolio && docker stop portfolio-container || true && docker rm portfolio-container || true && docker run -d -p 80:80 --name portfolio-container hydrauser/portfolio"'
         }
     }
 }
