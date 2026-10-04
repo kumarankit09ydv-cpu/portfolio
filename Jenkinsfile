@@ -1,6 +1,14 @@
 pipeline {
 agent any
 
+parameters {
+    choice(
+        name: 'DEPLOY_TARGET',
+        choices: ['Local', 'Remote', 'Both'],
+        description: 'Where to deploy?'
+    )
+}
+
 stages {
 
     stage('Git Clone') {
