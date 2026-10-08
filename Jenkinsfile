@@ -54,7 +54,6 @@ stages {
         }
     }
 
-    
 
 post {
     success {
